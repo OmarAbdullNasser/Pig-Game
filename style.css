@@ -1,0 +1,149 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        height: 100vh;
+        color: #333;
+        background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    main {
+        display: flex;
+        overflow: hidden;
+        box-shadow: 0 3rem 5rem rgb(0 0 0 / 25%);
+        border-radius: 9rem;
+        background-color: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(200px);
+        filter: blur();
+    }
+    
+    section {
+        flex: 50%;
+        height: 80vh;
+        width: 80vh;
+        background-color: rgba(255, 255, 255, 0.35);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: all 0.75s;
+    }
+    
+    .player--active {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .info {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info h2 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    
+    .info p {
+        font-size: 8rem;
+        font-weight: 300;
+        color: #c7365f;
+    }
+    
+    .current-scor {
+        position: absolute;
+        top: 60%;
+        background-color: #c7365f;
+        opacity: 0.8;
+        border-radius: 9px;
+        color: #fff;
+        width: 40%;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.75s;
+    }
+    
+    .current-scor p {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        color: #ddd;
+    }
+    
+    .opartion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    img {
+        height: 10rem;
+        width: 10rem;
+        box-shadow: 0 2rem 5rem rgb(0 0 0 / 20%);
+    }
+    
+    button {
+        color: #444;
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 400;
+        transition: all 0.2s;
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 0.7rem 2.5rem;
+        border-radius: 50rem;
+        box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
+    }
+    
+    .btn:active {
+        transform: translate(0, 5px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn:focus {
+        outline: none;
+    }
+    
+    .opartion .new-game {
+        margin-bottom: 10rem;
+    }
+    
+    .opartion .new-roll {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .player--winner {
+        font-weight: 700;
+        background-color: #333;
+    }
