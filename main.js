@@ -45,6 +45,7 @@ new_game.addEventListener('click', function() {
     current_2.textContent = 0;
     dice.classList.add('hidden');
     document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
+    player_1.classList.add('player--active');
     player_2.classList.remove('player--active');
     playing = true;
     console.log(scors);
